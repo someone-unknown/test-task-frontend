@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "ssh": "ssh -i \"C:\\Users\\Gokudera Hayato\\.ssh\\not-paid-test-task-frontend.pem\" admin@52.59.203.244"
   },
   "dependencies": {
     "bootstrap": "^5.2.0",

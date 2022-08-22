@@ -20,7 +20,7 @@ const Login: NextPage = () => {
   const onSubmit: FormEventHandler<HTMLFormElement> = useCallback((event: FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
     setIsLoading(true);
-    fetch('http://localhost:8080/users/login', {
+    fetch('http://api.not-paid-test-task.prism.md/users/login', {
       method: 'POST',
       mode: 'cors',
       credentials: 'include',

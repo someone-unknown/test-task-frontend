@@ -9,7 +9,7 @@ const InstrumentsSymbol: NextPage = () => {
   const [ instrument, setInstrument ] = useState<any>(null);
 
   useEffect((): void => {
-    fetch(`http://localhost:8080/instruments/${instrument_symbol}`, {
+    fetch(`http://api.not-paid-test-task.prism.md/instruments/${instrument_symbol}`, {
       mode: 'cors',
       credentials: 'include',
     })

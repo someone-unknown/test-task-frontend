@@ -7,7 +7,7 @@ const Login: NextPage = () => {
   const [ instruments, setInstruments ] = useState<any[]>([]);
 
   useEffect((): void => {
-    fetch('http://localhost:8080/instruments', {
+    fetch('http://api.not-paid-test-task.prism.md/instruments', {
       mode: 'cors',
       credentials: 'include',
     })
