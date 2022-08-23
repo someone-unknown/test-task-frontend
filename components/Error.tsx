@@ -6,4 +6,6 @@ export const Error: FunctionComponent = memo((): ReactElement => (
   </div>
 ));
 
+Error.displayName = 'Error';
+
 export default Error;

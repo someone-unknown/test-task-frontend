@@ -6,4 +6,6 @@ export const Forbidden: FunctionComponent = memo((): ReactElement => (
   </div>
 ));
 
+Forbidden.displayName = 'Forbidden';
+
 export default Forbidden;

@@ -8,4 +8,6 @@ export const Loader: FunctionComponent = memo((): ReactElement => (
   </div>
 ));
 
+Loader.displayName = 'Loader';
+
 export default Loader;
