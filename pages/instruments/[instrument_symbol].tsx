@@ -32,7 +32,7 @@ const InstrumentsSymbol: NextPage = () => {
       })
       .catch((): void => setIsError(true))
       .finally((): void => setIsLoading(false));
-  }, []);
+  }, [instrument_symbol]);
 
   if (isLoading) {
     return <Loader />;
