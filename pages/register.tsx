@@ -21,7 +21,7 @@ const Login: NextPage = () => {
   const onSubmit: FormEventHandler<HTMLFormElement> = useCallback((event: FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
     setIsLoading(true);
-    fetch('http://api.test-task.prism.md/users/login', {
+    fetch('http://api.test-task.prism.md/users/register', {
       method: 'POST',
       mode: 'cors',
       credentials: 'include',
@@ -70,10 +70,10 @@ const Login: NextPage = () => {
           <label className="form-label" htmlFor="form2Example2">Password</label>
         </div>
 
-        <button type="submit" className="btn btn-primary btn-block mb-4" disabled={isLoading}>Sign in</button>
+        <button type="submit" className="btn btn-primary btn-block mb-4" disabled={isLoading}>Continue</button>
 
         <div className="text-center">
-          <p>Not a member? <Link href="/register">Register</Link></p>
+          <p>Already registered? <Link href="/login">Sign In</Link></p>
         </div>
       </form>
     </div>
